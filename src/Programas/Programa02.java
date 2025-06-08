@@ -19,6 +19,7 @@ public class Programa02 {
         double sueldoBruto = horasTrabajadas * tarifaPorHora;
         double descuento = sueldoBruto * 0.13;
         double sueldoNeto = sueldoBruto - descuento;
+        double salarioRealPorHora = sueldoNeto / horasTrabajadas;
 
         // Resultados
         System.out.println("\n--- RESULTADOS ---");
@@ -26,6 +27,7 @@ public class Programa02 {
         System.out.println("Sueldo bruto: " + sueldoBruto);
         System.out.println("Descuento (13%): " + descuento);
         System.out.println("Sueldo neto: " + sueldoNeto);
+        System.out.println("Salario real por hora: " + salarioRealPorHora);
 
         scanner.close();
     }
